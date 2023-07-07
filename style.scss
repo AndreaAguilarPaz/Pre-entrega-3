@@ -4,17 +4,12 @@
 {font-family: 'Poppins', sans-serif;}
 
 body{
-    background-color: lightpink;
-    background-image: linear-gradient(lightpink, aliceblue);
+    background {
+        color: lightpink;
+        range: linear-gradient(lightpink, aliceblue);
+    }
+    
 }
-
-nav{ 
-    width: 100%;
-    background-color: aliceblue;
-    list-style: none;
-   
-}
-
 
 .logo{
     width: 60px;
@@ -28,26 +23,32 @@ nav{
     border-radius: 100px;
 }
 
+.nav{
+    { 
+        width: 100%;
+        background-color: aliceblue;
+        list-style: none;
+       
+    }
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-ul{
-    display: flex;
-    flex-wrap: wrap;
- }
+    li{ 
+        list-style: none;
+        display: inline-block;
 
-ul li{ 
-    list-style: none;
-    display: inline-block;
+    }
 
-}
+    a{ 
+        text-decoration: none;
+        font-size: 25px;
+        color: darkslategrey;
+        padding: 20px;
+    }
 
-ul li a{ 
-    text-decoration: none;
-    font-size: 25px;
-    color: darkslategrey;
-    padding: 20px;
-}
-
-
+    }
 .HomeBox{
     width: 1000px;
     justify-content: space-evenly;
@@ -102,29 +103,35 @@ ul li a{
     
 }
 
-.footer-main {
+.footer{
+    main {
     width: 100%;
     padding: 5px 100px ;
     background-color: aliceblue;
     
-}
+    }
 
-.footer-main-flex {
+    main-flex {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
+    }
 
-.footer-contactinfo img{
+    contactinfo img{
     width: 20%;
     border-radius: 100px;
     padding: 20px;
-}
+    }
 
 
 
 
-.footer-contactinfo p{
+    contactinfo p{
     width: 50%;
 
+    }
 }
+
+@media (max-width: 600px) (min-width: 601px ){
+    .wrapper-main{ width: 100%;}
+}   
